@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday CHINNU❤️</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            margin-top: 30px;
+            padding: 0 15px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        h3 {
+            color: white;
+            padding: 0 15px;
+        }
+
+        /* Gallery */
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Popup */
+
+        .message-box {
+            display: none;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 85%;
+            max-width: 600px;
+            max-height: 80vh;
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+
+            z-index: 1000;
+
+            overflow-y: auto;
+
+            text-align: left;
+        }
+
+        .message-box h4 {
+            color: #ff4d6d;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .message-box p {
+            color: #444;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .message-box button {
+            display: block;
+
+            margin: 20px auto 0;
+
+            background: #ff4d6d;
+            color: white;
+
+            border: none;
+
+            padding: 12px 25px;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+        }
+
+        .message-box button:hover {
+            background: #e6395c;
+        }
+
+        /* Footer */
+
+        footer {
+            margin-top: 30px;
+            color: white;
+            padding-bottom: 20px;
+            font-size: 16px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .gallery img {
+                width: 180px;
+                height: 220px;
+            }
+
+            .message-box {
+                width: 90%;
+                max-height: 80vh;
+                padding: 20px;
+            }
+
+            .message-box p {
+                font-size: 1opx;
+                line-height: 1.7;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- Main Heading -->
+
+    <h1>THIS IS THE SURPRISE FOR YOU 🫂💋</h1>
+
+    <h2>Happy Birthday Ammaaa ❤️</h2>
+
+    <h3>
+        Click Each Memory To Reveal A Secret Message 🫂✨
+    </h3>
+
+
+    <!-- Gallery -->
+
+    <div class="gallery">
+
+        <img
+            src="gallery/photo1.jpeg"
+            onclick="showMessage(1)"
+            alt="Memory 1"
+        >
+
+        <img
+            src="gallery/photo2.jpeg"
+            onclick="showMessage(2)"
+            alt="Memory 2"
+        >
+
+        <img
+            src="gallery/photo3.jpeg"
+            onclick="showMessage(3)"
+            alt="Memory 3"
+        >
+
+        <img
+            src="gallery/photo4.jpeg"
+            onclick="showMessage(4)"
+            alt="Memory 4"
+        >
+
+    </div>
+
+
+    <!-- Message Popup -->
+
+    <div class="message-box" id="popup">
+
+        <h4>
+            ❤️ NOTE: Click every picture, every memory reveals a secret 💋
+        </h4>
+
+        <div id="secretText"></div>
+
+        <button onclick="closePopup()">
+            Close ❤️
+        </button>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+        made by your <strong> wifey </strong> with lost of love ❤️🦢
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function showMessage(num) {
+
+            let message = "";
+
+
+            /* MESSAGE 1 */
+
+            if (num == 1) {
+
+                message = `
+
+                    <p>
+                        <strong>TO MY DEAR FUTURE HUSBAND 💗</strong>
+                    </p>
+
+                    <p>
+                        Moreeeee moreeee happiest birthday na chinnu
+                        bangaramuuuuu ❤️
+
+                        Ee photo gurthundaa?
+                        You hold my hand for the first time.
+                        Appudu nenu chala special ga feel ayya.
+
+                        Nuvvu appudu oka maata cheppav,
+                        naaku adi chala nachesindi.
+
+                        Nenu pattukunna first ammai cheyyi idi,
+                        mummy cheyyi tarvata nee cheyyi pattukunna.
+
+                        Ala naaku adi chala nachindi.
+
+                        Our journey started there.
+
+                        Devuditho start ayindi.
+                        Devude ekkadidka nadipistadu inka munduku manna future manna dreams full fill 
+                        chesukune dakka nadipiyalli anni
+                        anni korukuntunnanu.
+
+                        In life, wherever you stand,
+                        I want to be by your side.
+
+                        Whatever happens,
+                        I want to be there.
+
+                        Nuvvu kuda na pakkana,
+                        naaku toduga,
+                        na supporter laga undali
+                        ani korukuntunnanu.
+
+                        I love you so much ❤️
+                    </p>
+
+                `;
+            }
+
+
+            /* MESSAGE 2 */
+
+            if (num == 2) {
+
+                message = `
+
+                    <p>
+                        <strong>THIS IS FOR YOU 💗</strong>
+                    </p>
+
+                    <p>
+
+                        Naaku nuvvu nijanga entha important o
+                        ela explain cheyyalo naaku teliyadu,
+                        endukante konni feelings ni words lo cheppalem.
+
+                        Nuvvu na life loki chala simple ga,
+                        anukokunda vachav.
+
+                        Kani na life lo most BEAUTIFUL part ayyav.
+
+                        Nenu netho, nee pakkana unna prati roju
+                        chala comfortable ga,
+                        chala happy ga feel avthaa.
+
+                        Prati problem chala chinnadiga kanipinchedi.
+
+                        Prati roju nee kosam,
+                        nee maatala kosam,
+                        nee navvu kosam wait chestaa.
+
+                        Chuttu enthamandi unna,
+                        em chestunna,
+                        nuvvu na mind lo nunchi povu.
+
+                        Nuvvu ela feel avthavo,
+                        ala feel avthav ani,
+                        nenu ninnu happy ga unchali ani
+                        korukuntunna.
+
+                        Kani vere di jarigindi...
+
+                        Labuuuuuuuuuuu ❤️
+
+                    </p>
+
+                `;
+            }
+
+
+            /* MESSAGE 3 */
+
+            if (num == 3) {
+
+                message = `
+
+                    <p>
+
+                        <strong>
+                            Vere di jarigindi ante
+                            preminchadam lo kaadu,
+                            prema ni chupinchadam lo
+                            odipoyaa nenu.
+
+                            Danni malli nilapettukuntaa ✨
+                        </strong>
+
+                    </p>
+
+
+                    <p>
+                        WE MADE LAST YR OF OUR LG VEREY VEREY SPECIAL 
+                        MANNAM AA DAYS NI APATIKI MISS AVUTHAM 
+
+                        No matter how much we laugh,
+                        fight, or tease each other,
+
+                        one thing that never changes
+                        is our love for each other.
+
+                        You are my happy place. ❤️
+
+                        ME and YOU against the world.
+
+                        You're my man,
+                        I'm your girl.
+
+                        Please hold on tight.
+
+                        Eppudaina nijanga
+                        nenu evarikaina important aa?
+
+                        Ani anipiste,
+                        please immediately run to me
+                        bangaramuuu.
+
+                        You are always important for me.
+
+                        Nuvvu pratisari perfect ga undalsina
+                        avasaram ledu bangaram.
+
+                        Nenu chese vatiki,
+                        chupinche vatiki
+                        importance and priority ivvu.
+
+                        Naaku ade chala happy anipistadi.
+
+                        Nuvvu naatho unte chaalu.
+
+                        Migathavi anni
+                        manam kalisi manage chesedham.
+
+                        Neeku em hurt ayindo
+                        naatho cheppu.
+
+                        Na cheyyi pattukoni aduguuuu.
+
+                        Cheppp...
+                        nenu vintaa.
+
+                        Na emotions ni control chese capacity
+                        naatho undi.
+
+                        Anni cheppina,
+                        arusukunna em raadu.
+
+                        Em aina prematho solve chesukundam.
+
+                     <strong> 3000 ❤️💋 </strong>
+
+                    </p>
+
+                `;
+            }
+
+
+            /* MESSAGE 4 */
+
+            if (num == 4) {
+
+                message = `
+
+                    <p>
+                        <strong>
+                            THE BOND WE SHARE 🦢
+                        </strong>
+                    </p>
+
+
+                    <p>
+
+                        Mana madhya unna bond
+                        evariki teliyaduu,
+                        manaki maatram telusu.
+
+                        You're my first kid.
+
+                        You are my kuchupuchuuu.
+
+                        Na bangarammmmm nuvve. ❤️
+
+                        I am soooo sorry
+                        ninnu chala sarlu edipinchaa.
+
+                        Naaku idi kavali,
+                        adi kavali ani
+                        chala sarlu cheptaa.
+
+                        Kani ammayilu vallaki nachina
+                        person ni ila adagadam
+                        right ekkuva untundi.
+
+                        Nuvve na first priority.
+
+                        Nuvve na favorite person. ❤️
+
+                        Nuvvu naalo chala change teesukochav.
+
+                        Basic ga cheppali ante,
+                        naaku idi istam,
+                        adi istam ani kuda
+                        gurtu undadu.
+
+                        Nuvvu nannu anni places ki teesukeltav.
+
+                        Chala kalalu unnayi.
+
+                        Netho adi cheyali,
+                        idi cheyali,
+                        akkadiki,
+                        ekkadiki netho vellali.
+
+                        Nuvvu ante entha istam ante,
+                        netho paatu nee family ni kuda
+                        love cheyyagalanu.
+
+                        Nanna, please okati gurthupettukova.
+
+                        Ippudu manam chala manchiga untunnam.
+
+                        Chala nerchukunnam.
+
+                        Chinna chinna efforts kuda
+                        chala important.
+
+                        Nenu vachinappudu
+                        na kosam oka 10 rupees petti
+                        edaina teesukochina,
+                        nenu full happy feel avthaa.
+
+                        Enduku ante ammayilu
+                        prema tho paatu
+                        chinna chinna things ni kuda
+                        expect chestaru.
+
+                        Naaku telusu bangaramuuuu,
+                        neeku em kavali,
+                        em cheyali ani.
+
+                        You don't worry bangaramuuuu.
+
+                        I will take care. ❤️
+                         Ni dreams anni success avalli oka failure ni capability ability ni decide cheyaldhuu
+                         Nuvvu cheyyagalav ani nenu appudu nammutha you can do it i am proud of you my little boy 
+                         nv happy ga undalli manchi job manchi body mannaki okaa illu mannaki okaa pappa metho nennu ee life ki edhee challu 
+
+                       <strong> I love you my FUTURE HUSBAND ❤️🫂🫂 can i call you my future husband? </strong
+
+                        
+
+                    </p>
+
+                `;
+            }
+
+
+            /* SHOW POPUP */
+
+            document.getElementById("secretText").innerHTML = message;
+
+            document.getElementById("popup").style.display = "block";
+
+        }
+
+
+        /* CLOSE POPUP */
+
+        function closePopup() {
+
+            document.getElementById("popup").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
